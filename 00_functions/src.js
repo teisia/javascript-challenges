@@ -16,6 +16,12 @@ module.exports = {
   return string.split('') },
 
   reverseJoin: function(array) {
-  return array.reverse().join() }
+  return array.reverse().join() },
+
+  reverseJoinCompact: function(array) {
+  return array.reverse().join('') },
+
+  backwardsDay: function(string) {
+  return "Hello " + string.split('').reverse().join('') }
 
 }
