@@ -13,5 +13,9 @@ module.exports = {
   return 'Hello ' + string.toLowerCase() },
 
   separate: function(string) {
-  return string.split('') }
+  return string.split('') },
+
+  reverseJoin: function(array) {
+  return array.reverse().join() }
+
 }
