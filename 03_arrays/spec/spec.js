@@ -6,28 +6,28 @@ describe('first', function() {
     expect(yourCode.first(['foo', 'bar'])).toEqual('foo');
   });
 
-  xit('returns undefined when given an empty Array', function() {
+  it('returns undefined when given an empty Array', function() {
     expect(yourCode.first([])).toEqual(undefined);
   });
 });
 
 describe('last', function() {
 
-  xit('returns the last element for a given Array', function() {
+  it('returns the last element for a given Array', function() {
     expect(yourCode.last(['foo', 'monkey', 'bar'])).toEqual('bar');
   });
 
-  xit('returns undefined when given an empty Array', function() {
+  it('returns undefined when given an empty Array', function() {
     expect(yourCode.last([])).toEqual(undefined);
   });
 });
 
 describe('empty', function() {
-  xit('returns true if the array has no elements', function() {
+  it('returns true if the array has no elements', function() {
     expect(yourCode.empty([])).toEqual(true);
   });
 
-  xit('returns false if the array has elements', function() {
+  it('returns false if the array has elements', function() {
     expect(yourCode.empty([1,2,3])).toEqual(false);
   });
 });
