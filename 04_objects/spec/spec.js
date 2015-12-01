@@ -1,7 +1,7 @@
 var yourCode = require('../src');
 
 describe('person', function() {
-  xit('returns an object with first_name = "John", last_name = "Mayer"', function() {
+  it('returns an object with first_name = "John", last_name = "Mayer"', function() {
     var person = yourCode.person();
     expect(person.firstName).toEqual('John');
     expect(person.lastName).toEqual('Mayer');
@@ -18,13 +18,13 @@ describe('sweetnesssProperty', function() {
     expect(yourCode.sweetnessProperty(obj)).toEqual('super');
   });
 
-  xit('returns undefined when there is no `sweetness` key', function() {
+  it('returns undefined when there is no `sweetness` key', function() {
     expect(yourCode.sweetnessProperty({})).toEqual(undefined);
   });
 });
 
 describe('savorynessProperty', function() {
-  xit('returns the value of the `savory-ness` key', function() {
+  it('returns the value of the `savory-ness` key', function() {
     var obj = {
       lastName: 'cool',
       "savory-ness": 'super',
@@ -33,13 +33,13 @@ describe('savorynessProperty', function() {
     expect(yourCode.savorynessProperty(obj)).toEqual('super');
   });
 
-  xit('returns undefined when there is no `savory-ness` key', function() {
+  it('returns undefined when there is no `savory-ness` key', function() {
     expect(yourCode.savorynessProperty({})).toEqual(undefined);
   });
 });
 
 describe('keys', function() {
-  xit('returns the keys of the given object as an Array', function() {
+  it('returns the keys of the given object as an Array', function() {
     var obj = {
       the: true,
       best: [1,2,3],
@@ -48,7 +48,7 @@ describe('keys', function() {
     expect(yourCode.keys(obj)).toEqual(['the', 'best', 'object']);
   });
 
-  xit('returns an empty Array when given an empty object', function() {
+  it('returns an empty Array when given an empty object', function() {
     expect(yourCode.keys({})).toEqual([]);
   });
 });
