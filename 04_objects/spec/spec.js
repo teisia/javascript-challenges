@@ -1,7 +1,7 @@
 var yourCode = require('../src');
 
 describe('person', function() {
-  it('returns an object with first_name = "John", last_name = "Mayer"', function() {
+  xit('returns an object with first_name = "John", last_name = "Mayer"', function() {
     var person = yourCode.person();
     expect(person.firstName).toEqual('John');
     expect(person.lastName).toEqual('Mayer');
@@ -9,7 +9,7 @@ describe('person', function() {
 });
 
 describe('sweetnesssProperty', function() {
-  xit('returns the value of the `sweetness` key', function() {
+  it('returns the value of the `sweetness` key', function() {
     var obj = {
       lastName: 'cool',
       sweetness: 'super',

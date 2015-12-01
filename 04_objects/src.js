@@ -1,5 +1,12 @@
 module.exports = {
-  person: function() {
-    // your code here
-  }
+//  person: function() {
+  //return person.firstName;
+//  return person.lastName;
+//},
+
+sweetnessProperty: function(obj, swt) {
+  return obj.swt;
+}
+
+
 }
