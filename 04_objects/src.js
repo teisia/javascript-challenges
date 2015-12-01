@@ -5,7 +5,6 @@ module.exports = {
 //},
 
 sweetnessProperty: function(obj, swt) {
-  return obj.swt;
 }
 
 
