@@ -16,7 +16,7 @@ describe('simpeCall', function() {
 
 describe('each', function() {
 
-  xit('calls the function passed to it once for every item in the array', function() {
+  it('calls the function passed to it once for every item in the array', function() {
     var items = ['a', 'k', 'z'];
     var rand = (new Date()).getMilliseconds();
     var result = [rand];
@@ -32,7 +32,7 @@ describe('each', function() {
 
 describe('map', function() {
 
-  xit('calls the function passed to it once for every item in the array and returns an array with the results', function() {
+  it('calls the function passed to it once for every item in the array and returns an array with the results', function() {
     var rand = (new Date()).getMilliseconds();
     var items = [rand, 1,2,3];
 
@@ -46,7 +46,7 @@ describe('map', function() {
 });
 
 describe('reduce', function() {
-  xit('calls the function passed to it, given a starting value, and returns a single, accumulated value', function() {
+  it('calls the function passed to it, given a starting value, and returns a single, accumulated value', function() {
     var rand = (new Date()).getMilliseconds();
     var items = [rand,1,2,3];
 
@@ -57,7 +57,7 @@ describe('reduce', function() {
     expect(result).toEqual(rand + 6);
   });
 
-  xit('behaves correctly with String arguments', function() {
+  it('behaves correctly with String arguments', function() {
     var rand = (new Date()).getMilliseconds();
     var items = ['dog',' ','food',' ','your',' ','code','!'];
 

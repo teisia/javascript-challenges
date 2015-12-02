@@ -22,12 +22,29 @@ savorynessProperty: function(obj) {
 },
 
 keys: function(obj) {
-  newArray = [];
-  for (var key in obj) {
-    return key;
+  var newA = [];
+    for (var keys in obj) {
+      newA.push(keys);
   }
+  return newA;
+},
+
+sortedKeys: function(obj) {
+  var newA = [];
+    for (var keys in obj) {
+      newA.push(keys);
+  }
+  return newA.sort();
+},
+
+reverseSortedKeys: function(obj) {
+  var newA = [];
+    for (var keys in obj) {
+      newA.push(keys);
+    }
+  return newA.sort().reverse();
 }
 
-
-
 }
+
+//return Object.keys(obj);
