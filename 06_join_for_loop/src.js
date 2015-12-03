@@ -4,8 +4,41 @@
 
 module.exports = {
 
-  joinWithFor: function(list) {
-    // your code here
+  joinWithFor: function(array) {
+    return array.join("");
+  },
+
+  joinWithForAndIndex: function(array) {
+    newArray = [];
+    for (var i = 0; i < array.length; i++) {
+      newArray.push(array[i] + i);
+    }
+    return newArray.join("");
+  },
+
+  joinWithoutOddCharacters: function(array) {
+    var newArray = [];
+    for (var i = 0; i < array.length; i+=2) {
+      newArray.push(array[i]);
+    }
+    return newArray.join("");
+  },
+
+  joinWithForAndToken: function(array, token) {
+    var newArray = [];
+    for (var i = 0; i < array.length; i++) {
+      newArray.push(array[i]);
+    }
+    return newArray.join(token);
+  },
+
+  joinWithForAndAlternatingTokens: function(array, token1, token2) {
+    var newArray = [];
+    for (var i = 0; i < array.length; i++) {
+      newArray.push(array[i]);
+    }
+      return newArray.join(token1 + token2);
   }
+
 
 }
