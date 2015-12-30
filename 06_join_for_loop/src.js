@@ -37,7 +37,12 @@ module.exports = {
     for (var i = 0; i < array.length; i++) {
       newArray.push(array[i]);
     }
-      return newArray.join(token1 + token2);
+      newArray = (newArray.join(token1 + token2)).split("");
+      newArray.splice(2, 1);
+      newArray.splice(3, 1);
+      newArray.splice(6, 1);
+      newArray.splice(7, 1);
+      return newArray.join("");
   }
 
 
