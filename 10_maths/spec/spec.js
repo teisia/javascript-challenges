@@ -22,26 +22,22 @@ describe('minimum', function() {
 
 describe('average', function() {
   it('returns the average of the numeric values in the given array', function() {
-    pending();
     expect(yourCode.average([10, 20, 30])).toEqual(20);
   });
 
   it('returns NaN when the array is empty', function() {
-    pending();
     expect(yourCode.average([])).toEqual(NaN);
   });
 });
 
 describe('matrixRowMaximum', function() {
   it('returns an Array containing an element representing the maximum of each row of the input', function() {
-    pending();
     expect(yourCode.matrixRowMaximum([[1,2,3], [3,4,5]])).toEqual([3, 5]);
   });
 });
 
 describe('matrixRowMinimum', function() {
-  it('returns an Array containing an element representing the maximum of each row of the input', function() {
-    pending();
+  xit('returns an Array containing an element representing the maximum of each row of the input', function() {
     expect(yourCode.matrixRowMinimum([[1,2,3], [3,4,5]])).toEqual([1, 3]);
   });
 });
