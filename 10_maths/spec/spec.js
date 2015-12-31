@@ -37,28 +37,25 @@ describe('matrixRowMaximum', function() {
 });
 
 describe('matrixRowMinimum', function() {
-  xit('returns an Array containing an element representing the maximum of each row of the input', function() {
+  it('returns an Array containing an element representing the maximum of each row of the input', function() {
     expect(yourCode.matrixRowMinimum([[1,2,3], [3,4,5]])).toEqual([1, 3]);
   });
 });
 
 describe('matrixRowAverage', function() {
   it('returns an Array containing an element representing the average of each row of the input', function() {
-    pending();
     expect(yourCode.matrixRowAverage([[1,2,3], [3,4,5]])).toEqual([2, 4]);
   });
 });
 
 describe('sortedRowMatrix', function() {
   it('returns an array of arrays, containing each sorted row of the input', function() {
-    pending();
     expect(yourCode.sortedRowMatrix([[2,3,1], [3,4,2,5]])).toEqual([[1,2,3], [2,3,4,5]]);
   });
 });
 
 describe('lengthOfWords', function() {
   it('returns an array containing a count of the letter in each word of the provided sentence (string arugument)', function() {
-    pending();
     expect(yourCode.lengthOfWords('The lazy brown fox jumped')).toEqual([3,4,5,3,6]);
   });
 });
