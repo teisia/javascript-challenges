@@ -15,14 +15,15 @@ module.exports = {
     for (var i = 0; i < array.length; i++) {
       results.push(callback(array[i]));
   }
-    return results;
+    return results
 },
 
   reduce: function(val, callback) {
-    var results = 0;
+    var results = "";
     for (var i = 0; i < val; i++) {
-      results +=
+      results.join(callback(val[i]));
   }
+  return results
 }
 
 }
