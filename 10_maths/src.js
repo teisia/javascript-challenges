@@ -4,12 +4,23 @@
 
 module.exports = {
   maximum: function(array) {
+    max = array[0];
     for (var i = 0; i < array.length; i++) {
-      array[i]
+      if (array[i] > max) {
+        max = array[i];
+      }
     }
+    return max;
   },
 
   minimum: function(array) {
+    min = array[0];
+    for (var i = 0; i < array.length; i++) {
+      if (array[i] < min) {
+        min = array[i];
+      }
+    }
+    return min;
   },
 
   average: function(arrayOfNumbers) {
