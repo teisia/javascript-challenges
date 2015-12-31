@@ -19,7 +19,10 @@ module.exports = {
 },
 
   reduce: function(val, callback) {
-
+    var results = 0;
+    for (var i = 0; i < val; i++) {
+      results +=
   }
+}
 
 }
